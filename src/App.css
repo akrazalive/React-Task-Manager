@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+li h3 {
+  margin-top: 0;
+}
+
+li p {
+  margin-bottom: 10px;
+}
+
+button {
+  margin: 5px;
+}
+
+/* Media queries for responsiveness */
+
+/* Tablets and larger screens */
+@media (min-width: 768px) {
+  .App {
+    max-width: 900px;
+  }
+
+  form {
+    flex-wrap: nowrap;
+  }
+}
+
+/* Desktop screens */
+@media (min-width: 1024px) {
+  .App {
+    max-width: 1200px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+  form {
+    flex-direction: column;
+  }
+
+  form input {
+    flex: 0 0 100%;
+  }
+
+  ul li {
+    max-width: 100%;
+  }
+}
