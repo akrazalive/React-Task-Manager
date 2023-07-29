@@ -35,9 +35,9 @@ const TaskManagementSystem = ({ user }) => {
       groupId: user.groupId, // Hardcoded groupId for simplicity (replace with user's groupId in a real app)
       userId: user.userId, // Hardcoded userId for simplicity (replace with actual user ID in a real app)
     };
-     alert(user.userId);
-     alert(user.groupId);
-     console.log(newTask);
+     //alert(user.userId);
+     //alert(user.groupId);
+     //console.log(newTask);
     // Save the new task to the mock API
     fetch('http://localhost:5000/tasks', {
       method: 'POST',
