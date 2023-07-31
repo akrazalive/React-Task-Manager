@@ -37,7 +37,7 @@ const Login = ({ onLogin }) => {
     <form onSubmit={handleLogin}>
       <input type="text" value={username} onChange={handleUsernameChange} placeholder="Username" />
       <input type="password" value={password} onChange={handlePasswordChange} placeholder="Password" />
-      <button type="submit">Login</button>
+      <button class="btn btn-lg btn-success" type="submit">Login</button>
     </form>
   );
 };

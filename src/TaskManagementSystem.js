@@ -117,11 +117,11 @@ const TaskManagementSystem = ({ user }) => {
   
  
   return (
-    <div className="container">
+    <div className="container taskmanagement">
       <h1 className="center">Welcome, {user.username}!</h1>
       <h2 className="center">Task Management System</h2>
       
-        <form onSubmit={handleSubmit}>
+        <form id="taskform" onSubmit={handleSubmit}>
         <input
           type="text"
           value={title}
@@ -134,12 +134,12 @@ const TaskManagementSystem = ({ user }) => {
           onChange={handleDescriptionChange}
           placeholder="Description"
         />
-        <button type="submit">Add Task</button>
+        <button class="btn btn-lg btn-info" type="submit">Add Task</button>
       </form>
       <DragDropContext onDragEnd={handleDragEnd}>
         <Droppable droppableId="tasks">
           {(provided) => (
-            <ul ref={provided.innerRef} {...provided.droppableProps}>
+            <ul class="row" ref={provided.innerRef} {...provided.droppableProps}>
               {tasks.map((task, index) => (
                 <Draggable key={task.id} draggableId={task.id} index={index}>
                   {(provided) => (

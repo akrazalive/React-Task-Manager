@@ -5,7 +5,7 @@ const Task = ({ task, onComplete, onIncomplete, onDelete, provided }) => {
   return (
     <Draggable draggableId={task.id} index={provided.draggableProps.index}>
       {(provided) => (
-        <li
+        <li class="col-md-3 col-sm-12"
           ref={provided.innerRef}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
@@ -13,11 +13,11 @@ const Task = ({ task, onComplete, onIncomplete, onDelete, provided }) => {
           <h3>{task.title}</h3>
           <p>{task.description}</p>
           {!task.completed ? (
-            <button onClick={() => onComplete(task)}>Mark as Completed</button>
+            <button class="btn btn-sm btn-success" onClick={() => onComplete(task)}>Mark as Completed</button>
           ) : (
-            <button onClick={() => onIncomplete(task)}>Mark as Incomplete</button>
+            <button class="btn btn-sm btn-warning"  onClick={() => onIncomplete(task)}>Mark as Incomplete</button>
           )}
-          <button onClick={() => onDelete(task)}>Delete</button>
+          <button class="btn btn-sm btn-danger" onClick={() => onDelete(task)}>Delete</button>
         </li>
       )}
     </Draggable>

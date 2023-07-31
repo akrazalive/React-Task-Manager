@@ -57,6 +57,12 @@
       "password": "react",
       "groupId": 1,
       "id": 8
+    },
+    {
+      "username": "user420",
+      "password": "user420",
+      "groupId": 2,
+      "id": 9
     }
   ],
   "tasks": [
@@ -79,7 +85,7 @@
     {
       "title": "This is created",
       "description": "For User admin User PAassword",
-      "completed": false,
+      "completed": true,
       "groupId": 2,
       "id": "hElnQER"
     },

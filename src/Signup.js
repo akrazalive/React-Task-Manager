@@ -47,7 +47,7 @@ const Signup = ({ groups, onSignup }) => {
       <input type="text" value={username} onChange={handleUsernameChange} placeholder="Username" />
       <input type="password" value={password} onChange={handlePasswordChange} placeholder="Password" />
       <label>
-        Group ID:
+        Select Group
         <select value={groupId} onChange={handleGroupIdChange}>
           {groups.map((group) => (
             <option key={group.id} value={group.id}>
@@ -56,7 +56,7 @@ const Signup = ({ groups, onSignup }) => {
           ))}
         </select>
       </label>
-      <button type="submit">Sign Up</button>
+      <button class="btn btn-lg btn-danger" type="submit">Sign Up</button>
     </form>
   );
 };
