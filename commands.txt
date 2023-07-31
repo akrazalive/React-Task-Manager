@@ -1,0 +1,2 @@
+Necessary Commands
+/* npm run server or npx json-server --watch db.json --port 5000 */

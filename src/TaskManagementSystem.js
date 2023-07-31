@@ -117,9 +117,9 @@ const TaskManagementSystem = ({ user }) => {
   
  
   return (
-    <div>
-      <h1>Welcome, {user.username}!</h1>
-      <h2>Task Management System</h2>
+    <div className="container">
+      <h1 className="center">Welcome, {user.username}!</h1>
+      <h2 className="center">Task Management System</h2>
       
         <form onSubmit={handleSubmit}>
         <input
