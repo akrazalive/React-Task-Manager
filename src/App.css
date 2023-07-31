@@ -42,6 +42,16 @@ button {
   margin: 5px;
 }
 
+.login-container, .signup-container {
+    float: left;
+    width: 46%;
+    background: teal;
+    border-radius: 13px;
+    padding: 18px 33px;
+    border: 4px solid deepskyblue;
+    margin: 18px;
+}
+
 /* Media queries for responsiveness */
 
 /* Tablets and larger screens */

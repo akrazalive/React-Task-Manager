@@ -28,10 +28,16 @@ const App = () => {
         <TaskManagementSystem user={user} />
       ) : (
         <>
-          <h1>Login</h1>
-          <Login onLogin={handleLogin} />
-          <h1>Sign Up</h1>
-          <Signup groups={groups} onSignup={handleSignup} />
+         <div className="app-container">
+          <div className="login-container">
+            <h1 className="center white-text">Login</h1>
+            <Login onLogin={handleLogin} />
+          </div>
+          <div className="signup-container">
+            <h1 className="center white-text">Sign Up</h1>
+            <Signup groups={groups} onSignup={handleSignup} />
+          </div>
+        </div>
         </>
       )}
     </div>
