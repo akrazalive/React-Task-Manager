@@ -124,10 +124,18 @@
     {
       "title": "Senior Node JS Developer",
       "description": "All European Careers",
-      "completed": false,
+      "completed": true,
       "groupId": 1,
       "userId": 8,
       "id": "MDZQ6b1"
+    },
+    {
+      "title": "Za was wasd",
+      "description": "Kwas ba d rake",
+      "completed": false,
+      "groupId": 1,
+      "userId": 5,
+      "id": "JYdP1xt"
     }
   ]
 }
